@@ -2,18 +2,18 @@
 #include <stdio.h>
 int main()
 {
-    char ch;
-    char s[20],sen[100];
-    
-    scanf("%c",&ch);
-    scanf("%s",s);
-    scanf("\n");    
-    scanf("%[^\n]%*c",sen);
-    printf("%c\n",ch);
-    printf("%s\n",s);
-    printf("%s\n",sen);
-    return 0;
-    }
+char ch;
+char s[20],sen[100];
+scanf("%c",&ch);
+scanf("%s",s);
+scanf("\n");    
+scanf("%[^\n]%*c",sen);
+printf("%c\n",ch);
+printf("%s\n",s);
+printf("%s\n",sen);
+return 0;
+}
+
 
 
 
@@ -21,11 +21,35 @@ int main()
 
 //Logic to find greatest of four number using conditional operator
 int max(int a, int b) {
-    // conditional ? return value if true : return value if false
-   return a > b ? a : b;    
+// conditional ? return value if true : return value if false
+return a > b ? a : b;    
 }
 int max_of_four(int a, int b, int c, int d) {
-    return max(a, max(b, max(c, d)));
+return max(a, max(b, max(c, d)));
 }
 int ans = max_of_four(a, b, c, d);
+
+
+
+
+
+
+//If n is between 0 & 9 , print the lowercase English word corresponding to the number (e.g., one for , two for , etc.).
+If n is greater than 9, print Greater than 9.
+int n;
+char *value[]={"Greater than 9","One","two","three","four","five","Six","seven","eight","Nine"}; 
+scanf("%d",&n);
+if(n<9){
+printf("%s",value [n]);
+}
+else {
+printf("%s",value[0]);
+}
+return 0;
+}    
+
+
+
+
+
   
