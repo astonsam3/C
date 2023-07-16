@@ -51,5 +51,23 @@ return 0;
 
 
 
+//for a interval[a,b] check if its between 1 and 9 if it is then print its word form for each number, if greater than 9 then print if its even or odd for every number in the interval
+int a, b;
+scanf("%d\n%d", &a, &b);
+char* value[10] ={"zero","one","two","three","four","five","six","seven","eight","nine"}; 
+for(int i=a; i<=b; i++){
+        if(i>9){
+            if(i%2==0){
+                printf("even\n");
+            }
+            else{
+                printf("odd\n");
+            }
+        }    
+        else{
+            printf("%s\n",value[i]);
+        }    
+        }
+ 
 
   
