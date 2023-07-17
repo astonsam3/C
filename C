@@ -70,4 +70,15 @@ for(int i=a; i<=b; i++){
         }
  
 
+
+
+//sum of digits of a number
+int n, sum=0;
+sum += n%10;
+n /= 10;
+
+
+
+
+
   
