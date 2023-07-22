@@ -51,6 +51,9 @@ return 0;
 
 
 
+
+
+
 //for a interval[a,b] check if its between 1 and 9 if it is then print its word form for each number, if greater than 9 then print if its even or odd for every number in the interval
 int a, b;
 scanf("%d\n%d", &a, &b);
@@ -68,7 +71,12 @@ for(int i=a; i<=b; i++){
             printf("%s\n",value[i]);
         }    
         }
- 
+
+
+
+
+
+
 
 
 
@@ -80,5 +88,29 @@ n /= 10;
 
 
 
+
+
+
+
+
+//so what this code does is this function has 3 parameters one is (marks, no. of students, gender)
+marks are stores as m0=b, m1=g, m2=b,m3=g in such fashion
+so if the input is b then print the sum of marks all boys and if girls print sum of all girls
+
+int marks_summation(int* marks, int number_of_students, char gender) {
+   int total = 0;
+   if (gender=='b'){
+       for(int i=0; i<=number_of_students;i+=2){
+           total+= marks[i];   
+       }
+    }
+    else{
+        for(int i=1; i<=number_of_students;i+=2){
+            total+= marks[i];
+        }
+    }
+   
+   return total;
+}
 
   
