@@ -240,6 +240,7 @@ int main()
 
 
 // this code first creates the array, then prints the value of array in another code
+https://github.com/astonsam3/C/issues/1#issue-1858551703
 int main() 
 {
 
