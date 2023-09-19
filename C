@@ -424,26 +424,19 @@ int main(){
 //count the digit frequency
 to check its a number, see if its lieing btweeen 0 and 9 using if statement
 then to increment a[name[i]-48]++ = a[name[5]-48] = 53-48 ==5++
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
+// program to count the occurence of each number in a mixture of charector number and letter
+we are using an array for each number and incrementing based on occarence usinf if statement 
 
-int main() {
-
-   
-    char name[100];
-    int a[9]={0};
+ char *name;
+    name = (char*)malloc(10*sizeof(char));
+    int a[9]={0}; 
     scanf("%s",name);
     for(int i=0; i<strlen(name); i++){
         if(name[i]>='0' && name[i]<='9'){
             a[name[i]-48]++;
         }
     }
-        for(int i=0; i<=9; i++){
+        for(int i=0; i<9; i++){
       printf("%d ",a[i]);  
     }
     
-       
-    return 0;
-}
